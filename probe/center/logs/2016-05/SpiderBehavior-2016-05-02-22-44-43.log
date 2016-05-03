@@ -1,0 +1,276 @@
+INFO - PoolWorker-1 - run - 2016-05-02 22:44:43,674 - crawl energy.cpnn from 2016-05-02 22:44:43.674744
+WARNING - PoolWorker-1 - cpnn_spider - 2016-05-02 22:44:44,186 - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+WARNING - PoolWorker-1 - cpnn_spider - 2016-05-02 22:44:44,186 - <div class="ep-pages"> 
+   
+<script language="JavaScript" type="text/javascript">
+
+//createPageHTML(67, 0, "default", "htm");
+var currentPage = 0;//所在页从0开始
+//var headPage = "default"+"."+"htm";//首页
+//var tailPage = "default_" + (countPage-1) + ".htm"//尾页
+var prevPage = currentPage-1//上一页
+var nextPage = currentPage+1//下一页
+var countPage = 67//共多少页
+
+document.write("共"+countPage+"页&nbsp;&nbsp;");
+//设置上一页代码
+if(countPage>1&&currentPage!=0&&currentPage!=1)
+document.write("<a href=\"default.htm\">首页</a>&nbsp;<a href=\"default"+"_" + prevPage + "."+"htm\">上一页</a>&nbsp;");
+else if(countPage>1&&currentPage!=0&&currentPage==1)
+document.write("<a href=\"default.htm\">首页</a>&nbsp;<a href=\"default.htm\">上一页</a>&nbsp;");
+else
+document.write("首页&nbsp;上一页&nbsp;");
+//循环
+var num = 5;
+for(var i=0+(currentPage-1-(currentPage-1)%num) ; i<=(num+(currentPage-1-(currentPage-1)%num))&&(i<countPage) ; i++){
+if(currentPage==i)
+document.write((i+1)+"&nbsp;");
+else if(i==0){
+document.write("<a href=\"default.htm\">"+1+"</a>&nbsp;");
+}else
+document.write("<a href=\"default"+"_" + i + "."+"htm\">"+(i+1)+"</a>&nbsp;");
+}
+
+//设置下一页代码
+if(countPage>1&&currentPage!=(countPage-1))
+document.write("<a href=\"default"+"_" + nextPage + "."+"htm\">下一页</a>&nbsp;<a href=\"default_" + (countPage-1) + ".htm\">尾页</a>&nbsp;");
+else
+document.write("下一页&nbsp;尾页&nbsp;");
+
+//跳转页面
+document.write("<font class='9ptb'>转到第<input type='text' id='num' value="+(currentPage+1)+" style='width:30px'>页"+
+"&nbsp;<input type='submit' value='提交' onClick=javacript:toPage()></font>");
+
+function toPage(){
+var _num = document.getElementById("num").value;
+var str = "default"+"_"+(_num-1)+"."+"htm";
+var url = location.href.substring(0,location.href.lastIndexOf("/")+1);
+if(_num<=1||_num==null)
+location.href = url+"default"+"."+"htm";
+else if(_num>countPage)
+alert("本频道最多"+countPage+"页");
+else
+location.href = url+str;
+}
+                </script>
+</div>
+WARNING - PoolWorker-1 - cpnn_spider - 2016-05-02 22:44:45,132 - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+WARNING - PoolWorker-1 - cpnn_spider - 2016-05-02 22:44:45,132 - <div class="ep-pages"> 
+   
+<script language="JavaScript" type="text/javascript">
+
+//createPageHTML(67, 0, "default", "htm");
+var currentPage = 0;//所在页从0开始
+//var headPage = "default"+"."+"htm";//首页
+//var tailPage = "default_" + (countPage-1) + ".htm"//尾页
+var prevPage = currentPage-1//上一页
+var nextPage = currentPage+1//下一页
+var countPage = 67//共多少页
+
+document.write("共"+countPage+"页&nbsp;&nbsp;");
+//设置上一页代码
+if(countPage>1&&currentPage!=0&&currentPage!=1)
+document.write("<a href=\"default.htm\">首页</a>&nbsp;<a href=\"default"+"_" + prevPage + "."+"htm\">上一页</a>&nbsp;");
+else if(countPage>1&&currentPage!=0&&currentPage==1)
+document.write("<a href=\"default.htm\">首页</a>&nbsp;<a href=\"default.htm\">上一页</a>&nbsp;");
+else
+document.write("首页&nbsp;上一页&nbsp;");
+//循环
+var num = 5;
+for(var i=0+(currentPage-1-(currentPage-1)%num) ; i<=(num+(currentPage-1-(currentPage-1)%num))&&(i<countPage) ; i++){
+if(currentPage==i)
+document.write((i+1)+"&nbsp;");
+else if(i==0){
+document.write("<a href=\"default.htm\">"+1+"</a>&nbsp;");
+}else
+document.write("<a href=\"default"+"_" + i + "."+"htm\">"+(i+1)+"</a>&nbsp;");
+}
+
+//设置下一页代码
+if(countPage>1&&currentPage!=(countPage-1))
+document.write("<a href=\"default"+"_" + nextPage + "."+"htm\">下一页</a>&nbsp;<a href=\"default_" + (countPage-1) + ".htm\">尾页</a>&nbsp;");
+else
+document.write("下一页&nbsp;尾页&nbsp;");
+
+//跳转页面
+document.write("<font class='9ptb'>转到第<input type='text' id='num' value="+(currentPage+1)+" style='width:30px'>页"+
+"&nbsp;<input type='submit' value='提交' onClick=javacript:toPage()></font>");
+
+function toPage(){
+var _num = document.getElementById("num").value;
+var str = "default"+"_"+(_num-1)+"."+"htm";
+var url = location.href.substring(0,location.href.lastIndexOf("/")+1);
+if(_num<=1||_num==null)
+location.href = url+"default"+"."+"htm";
+else if(_num>countPage)
+alert("本频道最多"+countPage+"页");
+else
+location.href = url+str;
+}
+                </script>
+</div>
+WARNING - PoolWorker-1 - cpnn_spider - 2016-05-02 22:44:45,802 - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+WARNING - PoolWorker-1 - cpnn_spider - 2016-05-02 22:44:45,802 - <div class="ep-pages"> 
+   
+<script language="JavaScript" type="text/javascript">
+
+//createPageHTML(6, 0, "default", "htm");
+var currentPage = 0;//所在页从0开始
+//var headPage = "default"+"."+"htm";//首页
+//var tailPage = "default_" + (countPage-1) + ".htm"//尾页
+var prevPage = currentPage-1//上一页
+var nextPage = currentPage+1//下一页
+var countPage = 6//共多少页
+
+document.write("共"+countPage+"页&nbsp;&nbsp;");
+//设置上一页代码
+if(countPage>1&&currentPage!=0&&currentPage!=1)
+document.write("<a href=\"default.htm\">首页</a>&nbsp;<a href=\"default"+"_" + prevPage + "."+"htm\">上一页</a>&nbsp;");
+else if(countPage>1&&currentPage!=0&&currentPage==1)
+document.write("<a href=\"default.htm\">首页</a>&nbsp;<a href=\"default.htm\">上一页</a>&nbsp;");
+else
+document.write("首页&nbsp;上一页&nbsp;");
+//循环
+var num = 5;
+for(var i=0+(currentPage-1-(currentPage-1)%num) ; i<=(num+(currentPage-1-(currentPage-1)%num))&&(i<countPage) ; i++){
+if(currentPage==i)
+document.write((i+1)+"&nbsp;");
+else if(i==0){
+document.write("<a href=\"default.htm\">"+1+"</a>&nbsp;");
+}else
+document.write("<a href=\"default"+"_" + i + "."+"htm\">"+(i+1)+"</a>&nbsp;");
+}
+
+//设置下一页代码
+if(countPage>1&&currentPage!=(countPage-1))
+document.write("<a href=\"default"+"_" + nextPage + "."+"htm\">下一页</a>&nbsp;<a href=\"default_" + (countPage-1) + ".htm\">尾页</a>&nbsp;");
+else
+document.write("下一页&nbsp;尾页&nbsp;");
+
+//跳转页面
+document.write("<font class='9ptb'>转到第<input type='text' id='num' value="+(currentPage+1)+" style='width:30px'>页"+
+"&nbsp;<input type='submit' value='提交' onClick=javacript:toPage()></font>");
+
+function toPage(){
+var _num = document.getElementById("num").value;
+var str = "default"+"_"+(_num-1)+"."+"htm";
+var url = location.href.substring(0,location.href.lastIndexOf("/")+1);
+if(_num<=1||_num==null)
+location.href = url+"default"+"."+"htm";
+else if(_num>countPage)
+alert("本频道最多"+countPage+"页");
+else
+location.href = url+str;
+}
+                </script>
+</div>
+WARNING - PoolWorker-1 - cpnn_spider - 2016-05-02 22:44:46,658 - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+WARNING - PoolWorker-1 - cpnn_spider - 2016-05-02 22:44:46,658 - <div class="ep-pages"> 
+   
+<script language="JavaScript" type="text/javascript">
+
+//createPageHTML(8, 0, "default", "htm");
+var currentPage = 0;//所在页从0开始
+//var headPage = "default"+"."+"htm";//首页
+//var tailPage = "default_" + (countPage-1) + ".htm"//尾页
+var prevPage = currentPage-1//上一页
+var nextPage = currentPage+1//下一页
+var countPage = 8//共多少页
+
+document.write("共"+countPage+"页&nbsp;&nbsp;");
+//设置上一页代码
+if(countPage>1&&currentPage!=0&&currentPage!=1)
+document.write("<a href=\"default.htm\">首页</a>&nbsp;<a href=\"default"+"_" + prevPage + "."+"htm\">上一页</a>&nbsp;");
+else if(countPage>1&&currentPage!=0&&currentPage==1)
+document.write("<a href=\"default.htm\">首页</a>&nbsp;<a href=\"default.htm\">上一页</a>&nbsp;");
+else
+document.write("首页&nbsp;上一页&nbsp;");
+//循环
+var num = 5;
+for(var i=0+(currentPage-1-(currentPage-1)%num) ; i<=(num+(currentPage-1-(currentPage-1)%num))&&(i<countPage) ; i++){
+if(currentPage==i)
+document.write((i+1)+"&nbsp;");
+else if(i==0){
+document.write("<a href=\"default.htm\">"+1+"</a>&nbsp;");
+}else
+document.write("<a href=\"default"+"_" + i + "."+"htm\">"+(i+1)+"</a>&nbsp;");
+}
+
+//设置下一页代码
+if(countPage>1&&currentPage!=(countPage-1))
+document.write("<a href=\"default"+"_" + nextPage + "."+"htm\">下一页</a>&nbsp;<a href=\"default_" + (countPage-1) + ".htm\">尾页</a>&nbsp;");
+else
+document.write("下一页&nbsp;尾页&nbsp;");
+
+//跳转页面
+document.write("<font class='9ptb'>转到第<input type='text' id='num' value="+(currentPage+1)+" style='width:30px'>页"+
+"&nbsp;<input type='submit' value='提交' onClick=javacript:toPage()></font>");
+
+function toPage(){
+var _num = document.getElementById("num").value;
+var str = "default"+"_"+(_num-1)+"."+"htm";
+var url = location.href.substring(0,location.href.lastIndexOf("/")+1);
+if(_num<=1||_num==null)
+location.href = url+"default"+"."+"htm";
+else if(_num>countPage)
+alert("本频道最多"+countPage+"页");
+else
+location.href = url+str;
+}
+                </script>
+</div>
+WARNING - PoolWorker-1 - cpnn_spider - 2016-05-02 22:44:47,705 - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+WARNING - PoolWorker-1 - cpnn_spider - 2016-05-02 22:44:47,705 - <div class="ep-pages"> 
+   
+<script language="JavaScript" type="text/javascript">
+
+//createPageHTML(3, 0, "default", "htm");
+var currentPage = 0;//所在页从0开始
+//var headPage = "default"+"."+"htm";//首页
+//var tailPage = "default_" + (countPage-1) + ".htm"//尾页
+var prevPage = currentPage-1//上一页
+var nextPage = currentPage+1//下一页
+var countPage = 3//共多少页
+
+document.write("共"+countPage+"页&nbsp;&nbsp;");
+//设置上一页代码
+if(countPage>1&&currentPage!=0&&currentPage!=1)
+document.write("<a href=\"default.htm\">首页</a>&nbsp;<a href=\"default"+"_" + prevPage + "."+"htm\">上一页</a>&nbsp;");
+else if(countPage>1&&currentPage!=0&&currentPage==1)
+document.write("<a href=\"default.htm\">首页</a>&nbsp;<a href=\"default.htm\">上一页</a>&nbsp;");
+else
+document.write("首页&nbsp;上一页&nbsp;");
+//循环
+var num = 5;
+for(var i=0+(currentPage-1-(currentPage-1)%num) ; i<=(num+(currentPage-1-(currentPage-1)%num))&&(i<countPage) ; i++){
+if(currentPage==i)
+document.write((i+1)+"&nbsp;");
+else if(i==0){
+document.write("<a href=\"default.htm\">"+1+"</a>&nbsp;");
+}else
+document.write("<a href=\"default"+"_" + i + "."+"htm\">"+(i+1)+"</a>&nbsp;");
+}
+
+//设置下一页代码
+if(countPage>1&&currentPage!=(countPage-1))
+document.write("<a href=\"default"+"_" + nextPage + "."+"htm\">下一页</a>&nbsp;<a href=\"default_" + (countPage-1) + ".htm\">尾页</a>&nbsp;");
+else
+document.write("下一页&nbsp;尾页&nbsp;");
+
+//跳转页面
+document.write("<font class='9ptb'>转到第<input type='text' id='num' value="+(currentPage+1)+" style='width:30px'>页"+
+"&nbsp;<input type='submit' value='提交' onClick=javacript:toPage()></font>");
+
+function toPage(){
+var _num = document.getElementById("num").value;
+var str = "default"+"_"+(_num-1)+"."+"htm";
+var url = location.href.substring(0,location.href.lastIndexOf("/")+1);
+if(_num<=1||_num==null)
+location.href = url+"default"+"."+"htm";
+else if(_num>countPage)
+alert("本频道最多"+countPage+"页");
+else
+location.href = url+str;
+}
+                </script>
+</div>

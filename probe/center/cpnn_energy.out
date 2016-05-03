@@ -1,0 +1,20 @@
+------debug mode, use test_settings------
+start: 2010-01-01 00:00:00 <type 'datetime.datetime'> end: 2016-05-02 22:51:15.155699 <type 'datetime.datetime'> mode: hist retry: 100 <type 'int'> page: 1 <type 'int'> filter: True <type 'bool'>
+{u'url': u'http://www.cpnn.com.cn/dw/default.htm', u'keyword': u'\u80fd\u6e90,\u7535\u7f51'}
+{u'url': u'http://www.cpnn.com.cn/fdpd/zxun/default.htm', u'keyword': u'\u80fd\u6e90,\u53d1\u7535'}
+{u'url': u'http://www.cpnn.com.cn/fdpd/hysc/default.htm', u'keyword': u'\u80fd\u6e90,\u53d1\u7535,\u884c\u4e1a\u5e02\u573a'}
+{u'url': u'http://www.cpnn.com.cn/fdpd/shuj/default.htm', u'keyword': u'\u80fd\u6e90,\u53d1\u7535,\u6570\u636e'}
+{u'url': u'http://www.cpnn.com.cn/fdpd/renw/default.htm', u'keyword': u'\u80fd\u6e90,\u53d1\u7535,\u4eba\u7269'}
+{u'url': u'http://www.cpnn.com.cn/js/default.htm', u'keyword': u'\u80fd\u6e90,\u7535\u529b,\u79d1\u6280'}
+{u'url': u'http://www.cpnn.com.cn/dlcj/default.htm', u'keyword': u'\u80fd\u6e90,\u8d22\u7ecf'}
+{u'url': u'http://www.cpnn.com.cn/gdft/default.htm', u'keyword': u'\u80fd\u6e90,\u8bbf\u8c08'}
+{u'url': u'http://www.cpnn.com.cn/dqztbpd/hyzx/default.html', u'keyword': u'\u80fd\u6e90,\u7535\u6c14\u8bbe\u5907'}
+<200 http://www.cpnn.com.cn/dw/default.htm>
+<200 http://www.cpnn.com.cn/fdpd/zxun/default.htm>
+<200 http://www.cpnn.com.cn/fdpd/hysc/default.htm>
+<200 http://www.cpnn.com.cn/fdpd/shuj/default.htm>
+<200 http://www.cpnn.com.cn/fdpd/renw/default.htm>
+<200 http://www.cpnn.com.cn/js/default.htm>
+<200 http://www.cpnn.com.cn/dlcj/default.htm>
+<200 http://www.cpnn.com.cn/gdft/default.htm>
+<200 http://www.cpnn.com.cn/dqztbpd/hyzx/default.html>

@@ -1,0 +1,81 @@
+# -*- coding: utf-8 -*-
+
+# 爬虫名称(运行调度使用)
+spider_name = "guangfu_bjx"
+# 数据源名称(抓取网站名)
+source_name = "北极星太阳能光伏网"
+# 数据源入口(抓取URLs配置)
+entrance = [
+    # 原材料及辅料
+    {'keyword': '光伏,原材料,辅料,硅料', 'url': 'http://guangfu.bjx.com.cn/gl/?page=1'},
+    {'keyword': '光伏,原材料,辅料,硅片', 'url': 'http://guangfu.bjx.com.cn/gp/?page=1'},
+    {'keyword': '光伏,原材料,辅料,多晶硅', 'url': 'http://guangfu.bjx.com.cn/ycl/List.aspx?typeid=491&classid=562&page=1'},
+    {'keyword': '光伏,原材料,辅料,钳锅', 'url': 'http://guangfu.bjx.com.cn/ycl/List.aspx?typeid=563&classid=562&page=1'},
+    {'keyword': '光伏,原材料,辅料,银浆', 'url': 'http://guangfu.bjx.com.cn/ycl/List.aspx?typeid=564&classid=562&page=1'},
+    {'keyword': '光伏,原材料,辅料,光伏玻璃', 'url': 'http://guangfu.bjx.com.cn/gfbl/?page=1'},
+    {'keyword': '光伏,原材料,辅料,EVA背板', 'url': 'http://guangfu.bjx.com.cn/eva/?page=1'},
+    {'keyword': '光伏,原材料,辅料,焊带', 'url': 'http://guangfu.bjx.com.cn/hd/?page=1'},
+    {'keyword': '光伏,原材料,辅料,要闻', 'url': 'http://guangfu.bjx.com.cn/ycl/List.aspx?classid=562&page=1'},
+    {'keyword': '光伏,原材料,辅料,市场', 'url': 'http://guangfu.bjx.com.cn/ycl/List.aspx?typeid=89&classid=562&page=1'},
+    # 电池组件
+    {'keyword': '光伏,电池组件,太阳能电池,光伏电池', 'url': 'http://guangfu.bjx.com.cn/tyndc/?page=1'},
+    {'keyword': '光伏,电池组件,单晶组件', 'url': 'http://guangfu.bjx.com.cn/djzj/?page=1'},
+    {'keyword': '光伏,电池组件,多晶组件', 'url': 'http://guangfu.bjx.com.cn/dczj/List.aspx?typeid=571&classid=569&page=1'},
+    {'keyword': '光伏,电池组件,薄膜组件', 'url': 'http://guangfu.bjx.com.cn/bmzj/?page=1'},
+    {'keyword': '光伏,电池组件,高效组件', 'url': 'http://guangfu.bjx.com.cn/gxzj/?page=1'},
+    {'keyword': '光伏,电池组件,聚光组件', 'url': 'http://guangfu.bjx.com.cn/jgzj/?page=1'},
+    {'keyword': '光伏,电池组件,要闻', 'url': 'http://guangfu.bjx.com.cn/dczj/List.aspx?classid=569&page=1'},
+    {'keyword': '光伏,电池组件,市场', 'url': 'http://guangfu.bjx.com.cn/dczj/List.aspx?typeid=89&classid=569&page=1'},
+    # 光伏系统工程
+    {'keyword': '光伏,系统工程,发电项目', 'url': 'http://guangfu.bjx.com.cn/fdxm/?page=1'},
+    {'keyword': '光伏,系统工程,电站EPC', 'url': 'http://guangfu.bjx.com.cn/epc/?page=1'},
+    {'keyword': '光伏,系统工程,电站投融资', 'url': 'http://guangfu.bjx.com.cn/dztrz/?page=1'},
+    {'keyword': '光伏,系统工程,电站并网', 'url': 'http://guangfu.bjx.com.cn/dzbw/?page=1'},
+    {'keyword': '光伏,系统工程,光伏应用', 'url': 'http://guangfu.bjx.com.cn/gfyy/?page=1'},
+    {'keyword': '光伏,系统工程,太阳能建筑', 'url': 'http://guangfu.bjx.com.cn/tynjz/?page=1'},
+    {'keyword': '光伏,系统工程,要闻', 'url': 'http://guangfu.bjx.com.cn/xtgc/List.aspx?classid=583&page=1'},
+    {'keyword': '光伏,系统工程,市场', 'url': 'http://guangfu.bjx.com.cn/xtgc/List.aspx?typeid=89&classid=583&page=1'},
+    # 光伏逆变器
+    {'keyword': '光伏,逆变器,项目', 'url': 'http://guangfu.bjx.com.cn/xmxx/?page=1'},
+    {'keyword': '光伏,逆变器,评论', 'url': 'http://guangfu.bjx.com.cn/hypl/?page=1'},
+    {'keyword': '光伏,逆变器,访谈', 'url': 'http://guangfu.bjx.com.cn/rwft/?page=1'},
+    ##{'keyword': '光伏,逆变器,政策,法规', 'url': 'http://guangfu.bjx.com.cn/zcfg/'},
+    {'keyword': '光伏,逆变器,技术', 'url': 'http://guangfu.bjx.com.cn/jsqy/?page=1'},
+    {'keyword': '光伏,逆变器,行业评论', 'url': 'http://guangfu.bjx.com.cn/hypl/?page=1'},
+    {'keyword': '光伏,逆变器,招标,采购', 'url': 'http://guangfu.bjx.com.cn/zbcg/?page=1'},
+    {'keyword': '光伏,逆变器,国际', 'url': 'http://guangfu.bjx.com.cn/gjzx/?page=1'},
+    {'keyword': '光伏,逆变器,要闻', 'url': 'http://guangfu.bjx.com.cn/nbq/List.aspx?classid=60&page=1'},
+    {'keyword': '光伏,逆变器,市场', 'url': 'http://guangfu.bjx.com.cn/nbq/List.aspx?typeid=89&classid=60&page=1'},
+    # 光伏零部件
+    {'keyword': '光伏,零部件,蓄电池,', 'url': 'http://guangfu.bjx.com.cn/xdc/?page=1'},
+    {'keyword': '光伏,零部件,控制器', 'url': 'http://guangfu.bjx.com.cn/tynkzq/?page=1'},
+    {'keyword': '光伏,零部件,监控系统', 'url': 'http://guangfu.bjx.com.cn/jkxt/?page=1'},
+    {'keyword': '光伏,零部件,光伏支架', 'url': 'http://guangfu.bjx.com.cn/gfzj/?page=1'},
+    {'keyword': '光伏,零部件,汇流箱', 'url': 'http://guangfu.bjx.com.cn/hlx/?page=1'},
+    {'keyword': '光伏,零部件,追踪器', 'url': 'http://guangfu.bjx.com.cn/zzq/?page=1'},
+    {'keyword': '光伏,零部件,要闻', 'url': 'http://guangfu.bjx.com.cn/lbj/List.aspx?classid=575&page=1'},
+    {'keyword': '光伏,零部件,市场', 'url': 'http://guangfu.bjx.com.cn/lbj/List.aspx?typeid=89&classid=575&page=1'},
+    # 发热发电 
+    {'keyword': '光伏,发热发电,反射镜,聚光镜', 'url': 'http://guangfu.bjx.com.cn/fsj/?page=1'},
+    {'keyword': '光伏,发热发电,集热系统', 'url': 'http://guangfu.bjx.com.cn/jrxt/?page=1'},
+    {'keyword': '光伏,发热发电,蓄热系统', 'url': 'http://guangfu.bjx.com.cn/xrxt/?page=1'},
+    {'keyword': '光伏,发热发电,换热系统', 'url': 'http://guangfu.bjx.com.cn/hrxt/?page=1'},
+    {'keyword': '光伏,发热发电,监控系统', 'url': 'http://guangfu.bjx.com.cn/jiankongxitong/?page=1'},
+    {'keyword': '光伏,发热发电,跟踪系统', 'url': 'http://guangfu.bjx.com.cn/gzxt/?page=1'},
+    {'keyword': '光伏,发热发电,系统工程', 'url': 'http://guangfu.bjx.com.cn/xitonggongcheng/?page=1'},
+    {'keyword': '光伏,发热发电,电站营运', 'url': 'http://guangfu.bjx.com.cn/dzyy/?page=1'},
+    {'keyword': '光伏,发热发电,抛物面槽式', 'url': 'http://guangfu.bjx.com.cn/pwmcs/?page=1'},
+    {'keyword': '光伏,发热发电,集热塔式', 'url': 'http://guangfu.bjx.com.cn/jrts/?page=1'},
+    {'keyword': '光伏,发热发电,线性菲涅尔式', 'url': 'http://guangfu.bjx.com.cn/xxfnes/?page=1'},
+    {'keyword': '光伏,发热发电,抛物面碟式', 'url': 'http://guangfu.bjx.com.cn/pwmds/?page=1'},
+    # 其它
+    {'keyword': '光伏,国际', 'url': 'http://guangfu.bjx.com.cn/NewsList.aspx?typeid=82&page=1'},
+    {'keyword': '光伏,行业分析', 'url': 'http://guangfu.bjx.com.cn/NewsList.aspx?typeid=89&page=1'},
+    {'keyword': '光伏,项目', 'url': 'http://guangfu.bjx.com.cn/NewsList.aspx?typeid=103&page=1'},
+    {'keyword': '光伏,评论', 'url': 'http://guangfu.bjx.com.cn/NewsList.aspx?typeid=71&page=1'},
+    {'keyword': '光伏,招标', 'url': 'http://guangfu.bjx.com.cn/NewsList.aspx?typeid=79&page=1'},
+    {'keyword': '光伏,技术', 'url': 'http://guangfu.bjx.com.cn/NewsList.aspx?typeid=88&page=1'},
+    {'keyword': '光伏,访谈', 'url': 'http://guangfu.bjx.com.cn/NewsList.aspx?typeid=121&page=1'},
+    ## {'keyword': '光伏,政策', 'url': 'http://guangfu.bjx.com.cn/NewsList.aspx?typeid=100'},
+    {'keyword': '光伏,企业', 'url': 'http://guangfu.bjx.com.cn/NewsList.aspx?typeid=53&page=1'},
+]
